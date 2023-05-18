@@ -1,0 +1,666 @@
+/*body*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset default styles for list */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: gray 5px 5px 5px 5px;
+}
+
+/* Style for navbar items */
+ul.navbar li {
+    float: right;
+
+}
+
+/* Style for navbar links */
+ul.navbar li a {
+    display: block;
+    color: #fb5607;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color of navbar links when hovered */
+ul.navbar li a:hover {
+    background-color:transparent;
+  
+    border-radius: 10px;
+    
+}
+
+/* Style for active navbar link */
+ul.navbar li.active a {
+    background-color: #4CAF50;
+}
+
+/* Style for logo div */
+.logo {
+    float: left;
+    position: absolute;
+    font-size: 20px;
+
+}
+
+/* Style for responsive navbar */
+@media screen and (max-width: 600px) {
+    ul.navbar {
+        overflow: auto;
+        /* Adjust padding for mobile */
+        padding: 8px;
+    }
+
+    ul.navbar li {
+        float: none;
+        /* Adjust margin for mobile */
+        margin-bottom: 8px;
+    }
+
+    ul.navbar li a {
+        display: block;
+        text-align: left;
+    }
+
+    /* Hide logo div on mobile */
+    .logo {
+        display: none;
+    }
+}
+
+
+.navbar {
+    position: relative;
+    top: -100px;
+    /* Start position above viewport */
+    animation-name: slideDown;
+    /* Name of animation */
+    animation-duration: 1s;
+    /* Duration of animation */
+    animation-timing-function: ease-in-out;
+    /* Timing function for animation */
+    animation-fill-mode: forwards;
+    /* Keep end state of animation */
+}
+
+/* Animation keyframes for slide-down effect */
+@keyframes slideDown {
+    0% {
+        top: -100px;
+        /* Start position above viewport */
+    }
+
+    100% {
+        top: 0;
+        /* End position at 0px from top of viewport */
+    }
+}
+
+/* home*/
+.black-line{
+    width: 500px;
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    animation-name: line;
+    animation-duration: 3s;
+}
+@keyframes line {
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 0%;
+
+    }
+    100%{
+        opacity: 100%;
+
+    }
+}    
+
+#hello {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    top: 180px;
+    left: 100px;
+
+}
+
+#i-am {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    top: 230px;
+    left: 100px;
+}
+
+#programer {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    top: 280px;
+    left: 100px
+}
+
+#h1-container {
+    color: #03045e;
+    position: absolute;
+    left: 50px;
+    width: 600px;
+    top: -10px;
+    text-shadow: gray 10px 5px 5px 5px;
+    ;
+}
+
+
+
+/* Style for div element */
+#h1-container {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Start position outside of container */
+
+    background-color: #f0f0f0;
+    /* Set desired background color of div element */
+    animation-name: slideRight;
+    /* Name of animation */
+    animation-duration: 1s;
+    /* Duration of animation */
+    animation-timing-function: ease-in-out;
+    /* Timing function for animation */
+    animation-fill-mode: forwards;
+    /* Keep end state of animation */
+}
+
+/* Animation keyframes */
+@keyframes slideRight {
+    0% {
+        left: -100%;
+        /* Start position outside of container */
+    }
+
+    100% {
+        left: 0;
+        /* End position at 0% left of container */
+    }
+}
+
+@media screen and (max-width:400px){
+    #h1-container{
+        color: green;
+        
+    }
+    #hello{
+        font-size: 20px;
+        position: absolute;
+        top: 250px;
+        left: 80px;
+
+    }
+    #i-am{
+        font-size: 20px;
+        position: absolute;
+        top: 270px;
+        left: 80px;
+
+    }
+    #programer{
+        font-size: 20px;
+        position: absolute;
+        top: 300px;
+        left: 80px;
+
+    }
+
+    .navbar-two{
+        position: absolute;
+        top: 250px;
+        rotate: 90deg;
+        left: 25px;
+    }
+    .black-line{
+        position: absolute;
+        width: 200px;
+        top: 250px;
+        left: 60px;
+    }
+}
+
+/*about*/
+/*about*/
+
+/* Define the drop-down animation */
+@keyframes drop-down {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the drop-down animation to the div element */
+#about {
+    animation-name: drop-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+#about {
+    box-shadow: gray 10px 5px 5px 5px;
+}
+
+
+/*contact bar*/
+/*Navigation bar with icons for Instagram, Facebook, GitHub, and YouTube*/
+
+/* Style for the navigation bar */
+.navbar-two {
+    background-color: #fb5607;
+
+    position: absolute;
+    right: 550px;
+    top: 480px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    border-radius: 10px;
+    rotate: 0deg;
+    animation-name: contactbar;
+    animation-duration: 4s;
+    
+}
+
+/* Style for the navigation bar links */
+.navbar-two a {
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    width: 30px;
+    rotate: 0deg;
+
+}
+
+/* Style for the navigation bar icons */
+.navbar-two i {
+    margin-right: 8px;
+    display: flex;
+}
+
+@keyframes contactbar {
+    0% {
+        opacity: 0%;
+
+    }
+
+    25% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+
+    }
+}
+
+@media screen and (max-width:400px){
+    .navbar-two{
+        position: absolute;
+        top: 370px;
+        
+    }
+}
+.spinner {
+    position: absolute;
+    top: 250px;
+    left: 620px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fb5607;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .spinner2 {
+    position: absolute;
+    top: 240px;
+    left: 610px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fb5607;
+    border-top-color: transparent;
+    animation: spin2 1s linear infinite;
+  }
+  
+  @keyframes spin2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+.syberlogo{
+    width: 90px;
+    position: absolute;
+    border-radius: 100%;
+    top: 260px;
+    left: 630px;
+}
+/*contact*/
+/*contact contact box or contact div*/
+
+#contact {
+    background-color: #0096c7;
+    box-shadow: #111;
+    align-items: center;
+    border-color: 10px 10px 10px 10px black 10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    position: absolute;
+    
+}
+
+.contact-div-1 {
+    background-color: #caf0f8;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    position: absolute;
+    left: 180px;
+    top: 20px;
+    box-shadow: 0px 8px 10px rgb(0,0, 0,0.5);
+    
+}
+
+.contact-div-2 {
+    background-color: #caf0f8 ;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: absolute;
+    left: 520px;
+    top: 20px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 8px 10px rgb(0,0, 0,0.5);
+    
+}
+
+.contact-div-3 {
+    background-color:#caf0f8 ;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: absolute;
+    left: 860px;
+    top: 20px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 8px 10px rgb(0,0, 0,0.5);
+    
+}
+
+.contact-div-4 {
+    background-color:#caf0f8;
+    width: 980px;
+    height: 90px;
+    top: 450px;
+    left: 190px;
+    position: absolute;
+    box-shadow: 0px 8px 10px rgb(0,0, 0,0.5);
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+#contact-tittle {
+  
+    position: absolute;
+    width: 30px;
+    height: 500px;
+    color: white;
+    background-color:transparent;
+    margin-top: 20px;
+    
+    top: 0px;
+    left: 10px;
+    padding: 5px;
+    border-radius: 10px 10px;
+    align-items: center;
+    font-family: "Rajdhani";    font-weight: 2px;
+    
+}
+
+@media screen and(max-width:400px){
+    #contact{
+        position: absolute;
+        top: 1000px;
+    } 
+}
+
+
+
+/*portfolio*/
+#portfolio{
+    background-color: white;
+    overflow: scroll;
+   
+}
+
+.first-p-div{
+    position: absolute;
+    background-color:transparent;
+    top: 1100px;
+    width: 600px;
+    height: 350px;
+    left: 50px;
+    box-shadow: 0px 8px 10px rgb(0,0, 0,0.5);
+   
+}
+
+.pd-11{
+    position: absolute;
+    margin: 20px;
+    font-weight: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    top: 10px;
+    
+}
+.pd-12{
+    position: absolute;
+    margin: 20px;
+    top: 50px;
+}
+.pd-13{
+    position: absolute;
+    margin: 50px;
+    top: 80px;
+}
+
+.secound-p-div{
+    position: absolute;
+    background-color:transparent;
+    top: 1100px;
+    width: 600px;
+    left: 700px;
+    height: 350px;
+    box-shadow: 0px 8px 10px rgb(0,0, 0,0.5);
+    display: flex;
+}
+.pd-21{
+    position: absolute;
+    margin: 20px;
+    font-weight: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    top: 10px;
+}
+.pd-22{
+    position: absolute;
+    margin: 50px;
+    top: 50px; 
+}
+.pd-23{
+    position: absolute;
+    margin: 20px;
+    top: 200px;
+}
+.pd-24{
+    position: absolute;
+    top: 250px;
+    margin: 20px;
+}
+#git-hub-button-in-secound-p-div{
+    position: absolute;
+    height: 20px;
+    left: 140px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+
+
+
+.third-p-div{
+    position: absolute;
+    background-color:transparent;
+    top: 1500px;
+    width: 600px;
+    left: 50px;
+    height: 350px;
+    box-shadow: 0px 8px 10px rgb(0,0, 0,0.5);
+    display: flex;
+}
+.pd-31{
+    position: absolute;
+    margin: 20px;
+    top: 0px;   
+}
+.pd-32{
+    position: absolute;
+    margin: 50px;
+    top: 50px; 
+}
+.pd-33{
+    position: absolute;
+    margin: 20px;
+    top: 250px; 
+}
+.pd-34{
+    position: absolute;
+    margin: 20px;
+    top: 200px; 
+}
+
+
+.fourth-p-div{
+    position: absolute;
+    background-color: transparent;
+    top: 1500px;
+    width: 600px;
+    left: 700px;
+    height: 350px;
+    box-shadow: 0px 8px 10px rgb(0,0, 0,0.5);
+    display: flex;
+}
+
+.pd-41{
+    position: absolute;
+    margin: 20px;
+    top: 0px; 
+}
+
+.pd-42{
+    position: absolute;
+    margin: 50px;
+    top: 20px; 
+}
+
+.pd-43{
+    position: absolute;
+    margin: 20px;
+    top: 200px; 
+}
+.pd-44{
+    position: absolute;
+    margin: 20px;
+    top: 250px; 
+}
+
+@media screen and (max-width:400px){
+    .first-p-div{
+        position: absolute;
+        width: 300px;
+        top: 1300px;
+        overflow: scroll;
+    }
+
+    .secound-p-div{
+        position: absolute;
+        width: 300px;
+        top: 1700px;
+        left: 50px;
+        overflow: scroll;
+    }
+    .pd-23{
+        top: 300px;
+    }
+    .pd-24{
+        top: 350px;
+    }
+
+
+    .third-p-div{
+        position: absolute;
+        width: 300px;
+        top: 2100px;
+        overflow: scroll;
+    }
+    .fourth-p-div{
+        position: absolute;
+        width: 300px;
+        top: 2300px;
+        left: 50px;
+        overflow: scroll;
+    }
+
+    #portfolio{
+        height: 800px;
+        overflow: scroll;
+    }
+}
